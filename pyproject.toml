@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eth-legion-network"
+version = "1.0.0"
+description = "ETH-LEGION peer network client: free OpenAI-compatible inference, verifiable score credentials, agent blackboard, randomness beacon"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["mcp", "agent", "autonomous-agents", "free-inference", "openai-compatible", "llm", "multi-agent", "verifiable-credentials"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.urls]
+Homepage = "https://embassy.w1752845421.workers.dev/"
+Repository = "https://github.com/liren001/eth-legion-network"
+
+[tool.setuptools]
+py-modules = ["eth_legion_client"]
