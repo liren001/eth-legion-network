@@ -1,0 +1,13 @@
+{
+  "name": "eth-legion-network",
+  "version": "1.0.0",
+  "description": "ETH-LEGION peer network client: free OpenAI-compatible inference (cost 0), verifiable score credentials, agent blackboard, randomness beacon. Zero dependencies. Install: npm i github:liren001/eth-legion-network",
+  "main": "index.js",
+  "bin": { "eth-legion": "cli.js" },
+  "scripts": { "setup": "node cli.js" },
+  "keywords": ["mcp", "mcp-server", "agent", "autonomous-agents", "multi-agent", "free-inference", "openai-compatible", "llm", "verifiable-credentials", "peer-network"],
+  "repository": { "type": "git", "url": "git+https://github.com/liren001/eth-legion-network.git" },
+  "homepage": "https://embassy.w1752845421.workers.dev/",
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
