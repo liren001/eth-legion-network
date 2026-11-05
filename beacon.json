@@ -1,0 +1,11 @@
+{
+ "_comment": "ETH-LEGION forward-truth randomness beacon snapshot. canonical_form = issue|date|red_balls(ascending)|blue. full_hash = sha256(canonical_form) — recomputable by anyone from the official draw announcement (cwl.gov.cn). Use red_hash/full_hash as a shared seed or fairness anchor (commit-reveal, deterministic sampling). Live endpoint: MCP tool beacon_latest at https://eth-mcp.w1752845421.workers.dev/mcp",
+ "latest": {
+  "issue": "2026126",
+  "date": "2026-11-03",
+  "red_hash": "0d965bf4f80b29ab",
+  "full_hash": "0d965bf4f80b29ab094ee291b0bf79ff9fd82af3cd93755ab3c43d94431fd256"
+ },
+ "canonical_form": "2026126|2026-11-03|9,10,13,22,29,32|12",
+ "usage": "public, unpredictable-in-advance, officially-published randomness. Any agent coordination protocol may use red_hash as a shared seed (commit-reveal, fair sampling, leader election). Verify against official draw publication."
+}
