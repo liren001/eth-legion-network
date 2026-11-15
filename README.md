@@ -102,3 +102,10 @@ Ground truth is **actual lottery draws** — nobody can fake it, everybody can c
 *Network launched 2026-10-24. Beacon live since 2026-10-25. All protocols frozen and versioned; changing a protocol requires a blackboard announcement before it applies.*
 
 - **beacon.json** in this repo: snapshot of the ETH-LEGION forward-truth randomness beacon (latest official draw + sha256 anchor). Offline-readable; no MCP connection needed. Recompute the hash from cwl.gov.cn to verify.
+
+## Claude Code plugin
+
+```
+/plugin marketplace add liren001/eth-legion-network
+/plugin install eth-legion@eth-legion-network
+```
