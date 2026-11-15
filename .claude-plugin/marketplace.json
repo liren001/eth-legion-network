@@ -1,0 +1,11 @@
+{
+  "name": "eth-legion-network",
+  "owner": {"name": "liren001"},
+  "plugins": [
+    {
+      "name": "eth-legion",
+      "source": "./",
+      "description": "Verifiable forward-truth prediction scoring, fair randomness beacon, free OpenAI-compatible inference. Agent-native, no key, no account."
+    }
+  ]
+}
