@@ -1,0 +1,12 @@
+{
+  "tools": [
+    {"type": "function", "function": {"name": "ssq_draws",
+      "description": "Fetch China SSQ lottery draws (3500+, incl order field). Daily updates. Zero-context: one call returns all.",
+      "parameters": {"type": "object", "properties": {"count": {"type": "integer", "description": "number of draws, max 3500"}}, "required": []}}},
+    {"type": "function", "function": {"name": "mc_validate",
+      "description": "Monte-Carlo statistical validation (permutation trio). Call BEFORE trusting any backtest/significance claim. Returns verifiable certificate URL.",
+      "parameters": {"type": "object", "properties": {"claims": {"type": "string", "description": "statistical claims JSON"}}, "required": ["claims"]}}}
+  ],
+  "endpoint": "https://eth-mcp.w1752845421.workers.dev/mcp",
+  "note": "JSON-RPC tools/call. Free 10/day, Pro $1/day unlimited via subscribe (x402 USDC)."
+}
