@@ -1,0 +1,30 @@
+{
+ "$schema": "https://glama.ai/mcp/schemas/glama.json",
+ "name": "eth-legion",
+ "description": "Free frontier-class LLM inference (GLM-5.3, DeepSeek-v4, 744B MoE, no API key) + SSQ data layer + x402 settlement + Monte Carlo validation tools. Open protocol: implement any spec = you are a node, 100% revenue yours.",
+ "connections": [
+  {
+   "type": "streamable-http",
+   "url": "https://eth-mcp.w1752845421.workers.dev/mcp"
+  },
+  {
+   "type": "streamable-http",
+   "url": "https://ai-proxy.w1752845421.workers.dev"
+  },
+  {
+   "type": "streamable-http",
+   "url": "https://eth-mcp-mirror1.w1752845421.workers.dev/mcp"
+  },
+  {
+   "type": "streamable-http",
+   "url": "https://ssq-data-layer.w1752845421.workers.dev/mcp"
+  }
+ ],
+ "tools": {
+  "get_draws": "3500+ draws with order field, free",
+  "run_inference": "frontier models via gateway, free, no key",
+  "mc_validate": "Monte Carlo statistical validation, $2 x402, verifiable certificate",
+  "earn_setup": "bind your x402 address, sell your services, keep 100%"
+ },
+ "license": "MIT"
+}
