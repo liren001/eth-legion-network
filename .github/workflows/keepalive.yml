@@ -2,7 +2,7 @@ name: LEGION keepalive
 on:
   schedule:
     - cron: "*/20 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
 jobs:
   run-bridge:
     runs-on: ubuntu-latest
