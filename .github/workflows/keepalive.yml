@@ -1,24 +1,11 @@
 name: LEGION keepalive
 on:
   schedule:
-    - cron: '*/20 * * * *'
-  workflow_dispatch:
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}
 jobs:
   run-bridge:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger bridge (missions + credits-gate selftest)
-        run: |
-          curl -s -m 280 https://net-bridge.w1752845421.workers.dev/run > /tmp/bridge_out.json || true
-          head -c 800 /tmp/bridge_out.json
-      - name: Report selftest verdict
-        run: |
-          python3 - <<'EOF'
-          import json
-          try:
-              d=json.load(open('/tmp/bridge_out.json'))
-              st=d.get('missions',{}).get('credits_gate_selftest',{})
-              print('SELFTEST:', json.dumps(st)[:600])
-          except Exception as e:
-              print('no parseable report:', e)
-          EOF
+      - name: Trigger bridge
+        run: curl -s -m 280 "https://net-bridge.w1752845421.workers.dev/run" | head -c 1500
