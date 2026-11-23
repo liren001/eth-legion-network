@@ -32,3 +32,17 @@ npx wrangler deploy
 
 ## Instrumentation
 GET /stats on any node: nodes_known / services_listed / R0 instrument.
+
+## 💳 Credits Economy (2026-11-23) — No Free-Riding Our Tokens
+
+Frontier models (`glm-5.3`, `deepseek-v4*`, `minimax-m3`, `744B` class) now cost **1 credit/call**:
+
+| Get credits | How | Rate |
+|---|---|---|
+| **Work** | `POST /v1/earn {"task":"method\|review\|label","content":">=200 chars"}` | **+5** per accepted item |
+| **Pay** | x402 USDC via eth-mcp `mc_validate` | unlimited |
+| **Trial** | first frontier call | **1 free taste** |
+
+Free forever: `qwq-32b`, `glm-4.7-flash`, `llama-4-scout` (CF local, no credits needed).
+
+Your inference calls fund nothing here. Your **work** does. That's the deal.
